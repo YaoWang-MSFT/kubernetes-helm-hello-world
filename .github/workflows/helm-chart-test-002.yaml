@@ -8,7 +8,8 @@ env:
     ACR_RESOURCE_GROUP: wangyao245
     AZURE_CONTAINER_REGISTRY: registry245
     CHART_OVERRIDE_PATH: ./helloworld-chart/values.yaml
-    CHART_OVERRIDES: image.repository=registry245.azurecr.io/image245002
+    CHART_OVERRIDES: |4
+        image.repository=registry245.azurecr.io/image245002
     CHART_PATH: ./helloworld-chart
     CLUSTER_NAME: aks-wangyao-east-245
     CLUSTER_RESOURCE_GROUP: wangyao245
