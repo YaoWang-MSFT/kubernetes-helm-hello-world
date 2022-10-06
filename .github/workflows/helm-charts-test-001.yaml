@@ -12,7 +12,7 @@ env:
     CHART_PATH: ./helloworld-chart
     CLUSTER_NAME: aks-wangyao-east-245
     CLUSTER_RESOURCE_GROUP: wangyao245
-    CONTAINER_NAME: helmchartstestimage
+    CONTAINER_NAME: registry245.azurecr.io/helmchartstestimage
 jobs:
     buildImage:
         permissions:
