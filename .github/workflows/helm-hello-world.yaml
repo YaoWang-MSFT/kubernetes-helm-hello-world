@@ -8,8 +8,7 @@ env:
     ACR_RESOURCE_GROUP: ywang-rg-aks-0809
     AZURE_CONTAINER_REGISTRY: ywregistry1025
     CHART_OVERRIDE_PATH: ./helloworld-chart/values.yaml
-    CHART_OVERRIDES: image.repository=ywregistry1025.azurecr.io/helmimage1025
-        image.tag=${{ github.sha }}
+    CHART_OVERRIDES: image.repository=ywregistry1025.azurecr.io/helmimage1025,image.tag=${{ github.sha }}
     CHART_PATH: ./helloworld-chart
     CLUSTER_NAME: ywang-aks-1025
     CLUSTER_RESOURCE_GROUP: ywang-rg-aks-0809
